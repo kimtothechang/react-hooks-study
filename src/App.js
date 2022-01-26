@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import UseEffect from "./hooks/useEffect";
+import UseEffectApp from "./hooks/useEffectApp";
 
 function App() {
   return (
     <div className="App">
-      <UseEffect />
+      <UseEffectApp />
     </div>
   );
 }

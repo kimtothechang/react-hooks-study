@@ -2,11 +2,15 @@ import React, { StrictMode, useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 
 const App = () => {
+  const sayHello = () => console.log("hello");
+
   const [number, setNumber] = useState(0);
   const [aNumber, setAnumber] = useState(0);
 
+  useEffect(sayHello, [aNumber]);
+
   return (
-    <div className="App">
+    <div>
       <div>Hi</div>
       <button type="button" onClick={() => setNumber(number + 1)}>
         {number}
